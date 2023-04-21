@@ -1,0 +1,287 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 1rem;
+  color: #87879d;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* typography */
+
+.title {
+  font-size: 2.5rem;
+  color: #28283d;
+  font-weight: 900;
+  text-transform: capitalize;
+
+  margin-bottom: 0.25em;
+  line-height: 1.1;
+}
+
+.info-text,
+.footer-info-text {
+  font-weight: 500;
+  margin-bottom: 2em;
+  line-height: 1.6;
+}
+
+.section-number {
+  font-weight: 900;
+  margin: 0;
+  background: #fff;
+}
+
+.top-text {
+  font-size: inherit;
+  color: #4d96a9;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 1.5em;
+}
+
+.main-title,
+.footer-title {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 0 0 0.5em;
+}
+
+.main-title {
+  color: #28283d;
+}
+
+.footer-title {
+  color: #fff;
+}
+
+.footer-info-text {
+  font-size: 1.125rem;
+  color: #fff;
+  margin-top: 0.5em;
+}
+
+@media (min-width: 600px) {
+  .title {
+    font-size: 3rem;
+    padding: 0 0.5em;
+  }
+
+  .main-title,
+  .footer-title {
+    font-size: 2.5rem;
+    padding: 0 3em;
+  }
+}
+
+/* General layout */
+
+.primary-grid {
+  display: grid;
+  grid-template-columns: minmax(1.5em, 1fr) minmax(0px, 500px) minmax(
+      1.5em,
+      1fr
+    );
+}
+
+.main > *,
+.main-text-container,
+.hero-container,
+footer > *,
+.footer-container {
+  grid-column: 2 / -2;
+}
+
+@media (min-width: 600px) {
+  .primary-grid {
+    grid-template-columns: minmax(2em, 1fr) minmax(501px, 800px) minmax(
+        2em,
+        1fr
+      );
+  }
+}
+
+/* header */
+
+header > * {
+  grid-column: 1 / -1;
+}
+
+.logo {
+  max-width: 32%;
+  padding: 1.25em 0;
+  margin: 2em auto;
+}
+
+.header-img-container {
+  width: 100%;
+  transform: scale(1.13);
+}
+
+img {
+  max-width: 100%;
+}
+
+.image-hero {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .header-img-container {
+    margin: 2em 0 2.5em;
+  }
+}
+
+/* hero & main */
+
+.hero {
+  margin-bottom: 12.5em;
+}
+
+.section-number-box {
+  position: absolute;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  border: 1px solid #87879d40;
+  background: #fff;
+  border-radius: 100%;
+  margin-bottom: 4em;
+}
+
+.box-1 {
+  top: -70px;
+}
+
+.box-2 {
+  top: -27px;
+}
+
+.hr-container {
+  position: absolute;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  height: 1px;
+  color: #87879d;
+  opacity: 0.4;
+  width: 80px;
+  transform: rotate(90deg);
+}
+
+.hr-1 {
+  top: -120px;
+}
+
+.hr-2 {
+  top: -77px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5em;
+  margin: 3em 0;
+}
+
+.image-grid > img {
+  border-radius: 8px;
+}
+
+.main {
+  position: relative;
+}
+
+@media (min-width: 600px) {
+  .image-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+  }
+
+  .hero-container {
+    max-width: 400px;
+    justify-self: center;
+  }
+
+  .main-text-container,
+  .footer-text-container {
+    max-width: 670px;
+    justify-self: center;
+  }
+}
+
+/* footer */
+
+footer {
+  position: relative;
+  background-image: linear-gradient(
+      rgba(77, 150, 169, 0.9),
+      rgba(77, 150, 169, 0.9)
+    ),
+    url(assets/mobile/image-footer.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 5em 0 5em;
+  margin-top: 9em;
+}
+
+@media (min-width: 600px) {
+  footer {
+    background-image: linear-gradient(
+        rgba(77, 150, 169, 0.9),
+        rgba(77, 150, 169, 0.9)
+      ),
+      url(assets/tablet/image-footer.jpg);
+  }
+}
+
+/* buttons */
+
+.btn {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 900;
+  padding: 1.1em 1.8em;
+  border: none;
+  border-radius: 29px;
+  margin: 0 auto 1em;
+  display: block;
+}
+
+.download-btn {
+  padding: 1.2em 2.5em;
+  background: #4d96a9;
+}
+
+.info-btn,
+.download-footer-btn {
+  background: #855fb1;
+}
+
+footer .accent-text-btn {
+  color: #d9b8ff;
+}
+
+.hero .accent-text-btn {
+  color: #8fe3f9;
+}
+
+@media (min-width: 600px) {
+  .btn {
+    display: inline-block;
+    margin: 0 0.5em;
+  }
+}
