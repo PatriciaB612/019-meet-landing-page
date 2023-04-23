@@ -397,4 +397,8 @@ footer {
     width: 350px;
     text-align: left;
   }
+
+  .download-footer-btn {
+    margin: 0;
+  }
 }
