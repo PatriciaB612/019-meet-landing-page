@@ -180,9 +180,8 @@ footer > *,
 }
 
 .image-hero {
-  max-width: 100%;
+  width: 100%;
   grid-column: 1 / span 3;
-  /* transform: scale(1.12); */
 }
 
 .image-hero-left,
