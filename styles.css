@@ -145,10 +145,7 @@ footer .accent-text-btn {
 
 .primary-grid {
   display: grid;
-  grid-template-columns: minmax(1.5em, 1fr) minmax(0px, 500px) minmax(
-      1.5em,
-      1fr
-    );
+  grid-template-columns: minmax(2em, 1fr) minmax(0px, 500px) minmax(2em, 1fr);
 }
 
 footer > *,
@@ -172,10 +169,7 @@ footer > *,
 
 .header-grid {
   display: grid;
-  grid-template-columns: minmax(1.5em, 1fr) minmax(0px, 500px) minmax(
-      1.5em,
-      1fr
-    );
+  grid-template-columns: minmax(2em, 1fr) minmax(0px, 500px) minmax(2em, 1fr);
 }
 
 .logo {
@@ -186,9 +180,9 @@ footer > *,
 }
 
 .image-hero {
-  width: 100%;
+  max-width: 100%;
   grid-column: 1 / span 3;
-  transform: scale(1.1);
+  /* transform: scale(1.12); */
 }
 
 .image-hero-left,
@@ -241,12 +235,12 @@ footer > *,
 
   .image-hero-right {
     grid-area: image-right;
-    transform: translateX(35px);
+    /* transform: translateX(75px); */
   }
 
   .image-hero-left {
     grid-area: image-left;
-    transform: translateX(-35px);
+    /* transform: translateX(-75px); */
   }
 
   header {
